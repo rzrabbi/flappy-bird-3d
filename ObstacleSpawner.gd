@@ -5,6 +5,7 @@ var obstacle = preload("res://Obstacle.tscn")
 var offset_y = 5.0
 
 func start_spawning():
+	_on_SpawnDelay_timeout()
 	$SpawnDelay.start()
 		
 
