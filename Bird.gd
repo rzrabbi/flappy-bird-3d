@@ -21,6 +21,9 @@ func start():
 
 func _on_Bird_body_entered(body):
 	
+	#die
 	mode = RigidBody.MODE_STATIC
 	$"../Button2".show()
+	
+	get_tree().paused = true
 	pass # Replace with function body.
