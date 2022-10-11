@@ -11,7 +11,7 @@
 script = ExtResource( 1 )
 
 [node name="Cylinder" type="StaticBody" parent="."]
-transform = Transform( 2.0823, 0, 0, 0, 9, 0, 0, 0, 2.0823, 0.361, 14.059, 0 )
+transform = Transform( 2.0823, 0, 0, 0, 13.2252, 0, 0, 0, 2.0823, 0.361, 20, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Cylinder"]
 shape = SubResource( 5 )
@@ -24,7 +24,7 @@ mesh = SubResource( 6 )
 transform = Transform( -1.72724, 7.76554e-08, 0, -3.49365e-08, -0.205517, 0, 0, 0, 1.72724, -0.0113371, 0.688093, -0.0637642 )
 
 [node name="Cylinder2" type="StaticBody" parent="."]
-transform = Transform( 2.0823, 0, 0, 0, 9, 0, 0, 0, 2.0823, 0.360783, -14.0588, 0 )
+transform = Transform( 2.0823, 0, 0, 0, 13.2252, 0, 0, 0, 2.0823, 0.361, -20, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Cylinder2"]
 shape = SubResource( 5 )

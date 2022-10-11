@@ -11,7 +11,6 @@ func _ready():
 func _exit_tree():
 	save_hiscore()
 	
-
 func save_hiscore():
 	var file = File.new()
 	file.open("user://save_game.dat", File.WRITE)
