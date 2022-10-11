@@ -1,10 +1,11 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Bird.gd" type="Script" id=1]
 [ext_resource path="res://Main.gd" type="Script" id=2]
 [ext_resource path="res://flappy_bird.glb" type="PackedScene" id=3]
 [ext_resource path="res://ObstacleSpawner.gd" type="Script" id=4]
 [ext_resource path="res://LilitaOne-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Theme.tres" type="Theme" id=6]
 
 [sub_resource type="DynamicFont" id=10]
 size = 65
@@ -54,21 +55,29 @@ custom_fonts/font = SubResource( 10 )
 text = "Score:"
 
 [node name="Button" type="Button" parent="."]
-margin_left = 463.0
-margin_top = 1556.0
-margin_right = 504.0
-margin_bottom = 1576.0
-rect_scale = Vector2( 3.44706, 3.44706 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -149.0
+margin_top = 398.0
+margin_right = 149.0
+margin_bottom = 509.0
+theme = ExtResource( 6 )
 text = "Start"
 
 [node name="Button2" type="Button" parent="."]
 pause_mode = 2
 visible = false
-margin_left = 440.0
-margin_top = 1428.0
-margin_right = 497.0
-margin_bottom = 1448.0
-rect_scale = Vector2( 3.44706, 3.44706 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -161.0
+margin_top = 107.0
+margin_right = 161.0
+margin_bottom = 222.0
+theme = ExtResource( 6 )
 text = "Restart"
 
 [node name="Camera" type="Camera" parent="."]
@@ -106,7 +115,7 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Dead!"
 
 [node name="StaticBody" type="StaticBody" parent="."]
-transform = Transform( 15.0253, 0, 0, 0, 2.13977, 0, 0, 0, 8.04732, 2.07591, -15.2603, 0 )
+transform = Transform( 15.0253, 0, 0, 0, 2.13977, 0, 0, 0, 8.04732, 2.07591, -29.1313, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 shape = SubResource( 3 )
@@ -116,7 +125,7 @@ visible = false
 mesh = SubResource( 4 )
 
 [node name="StaticBody2" type="StaticBody" parent="."]
-transform = Transform( 15.0253, 0, 0, 0, 2.13977, 0, 0, 0, 8.04732, 2.07591, 20.9726, 0 )
+transform = Transform( 15.0253, 0, 0, 0, 2.13977, 0, 0, 0, 8.04732, 2.07591, 29.7723, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody2"]
 shape = SubResource( 3 )
@@ -126,10 +135,11 @@ visible = false
 mesh = SubResource( 4 )
 
 [node name="ObstacleSpawner" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.944, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.3991, 0, 0 )
 script = ExtResource( 4 )
 
 [node name="SpawnDelay" type="Timer" parent="ObstacleSpawner"]
+process_mode = 0
 wait_time = 2.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
