@@ -8,6 +8,7 @@
 [sub_resource type="CylinderMesh" id=6]
 
 [node name="Obstacle" type="Spatial"]
+transform = Transform( 1.01308, 0, 0, 0, 1.01308, 0, 0, 0, 1.01308, 0, 0, 0 )
 script = ExtResource( 1 )
 
 [node name="Cylinder" type="StaticBody" parent="."]

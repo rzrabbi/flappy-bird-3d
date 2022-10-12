@@ -2,7 +2,7 @@ extends Spatial
 
 var obstacle = preload("res://Obstacle.tscn")
 
-var offset_y = 5.0
+var offset_y = 8.5
 
 func start_spawning():
 	_on_SpawnDelay_timeout()

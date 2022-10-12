@@ -33,7 +33,7 @@ func _on_Button_pressed():
 	$Bird.start()
 	$ObstacleSpawner.start_spawning()
 	$AutoScoreTimer.start()
-	
+	$bg.start()
 	
 	pass # Replace with function body.
 
