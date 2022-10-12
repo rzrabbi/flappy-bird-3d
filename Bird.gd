@@ -4,7 +4,7 @@ var jump_power = 32
 
 func _input(event):
 	
-	if event.is_action_pressed("Jump"):
+	if event.is_action_pressed("Jump") || (event is InputEventMouseButton && event.pressed):
 		
 		jump()
 		pass
