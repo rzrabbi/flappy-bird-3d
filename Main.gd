@@ -20,6 +20,11 @@ func save_hiscore():
 func load_hiscore():
 	var file = File.new()
 	file.open("user://save_game.dat", File.READ)
+	
+	if file == null:
+		file.close()
+		return
+		
 	var content = file.get_64()
 	if content == null:
 		content = 0
