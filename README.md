@@ -1,4 +1,4 @@
-# Flappy Bird 3D Game
+<h1 align="center">Flappy Bird 3D Game</h1>
 
 <p align="center">
   <a href="https://rzrabbi.itch.io/flappy-bird-3d" target="_blank">
@@ -6,9 +6,11 @@
   </a>
 </p>
 
-This is my very first game development project! I've always wanted to explore game dev, and I chose Godot as my first engine to learn the ropes. Flappy Bird 3D is my first attempt at building something playable, learning how game programming works, and getting comfortable with Godot. It's a simple, classic game where you try to fly a bird through endless pipes, but making it in 3D was a fun challenge for my first project.
+<p align="center">
+  This is my very first game development project! I've always wanted to explore game dev, and I chose Godot as my first engine to learn the ropes. Flappy Bird 3D is my first attempt at building something playable, learning how game programming works, and getting comfortable with Godot. It's a simple, classic game where you try to fly a bird through endless pipes, but making it in 3D was a fun challenge for my first project.
+</p>
 
-## Gameplay Preview
+<h2 align="center">Gameplay Preview</h2>
 
 <p align="center">
   <a href="https://rzrabbi.itch.io/flappy-bird-3d">
