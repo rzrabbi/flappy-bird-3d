@@ -10,12 +10,13 @@ config_version=4
 
 [application]
 
-config/name="flappy_bird"
-run/main_scene="res://Main.tscn"
-boot_splash/image="res://splash.png"
+config/name="Flappy Bird 3D"
+config/description="A 3D Flappy Bird game featuring persistent high scores, dynamic obstacle spawning, and mobile-friendly touch controls."
+run/main_scene="res://scenes/Main.tscn"
+boot_splash/image="res://assets/textures/splash.png"
 boot_splash/bg_color=Color( 0.0156863, 0, 0, 1 )
-config/icon="res://flappy.png"
-config/windows_native_icon="res://flappy.ico"
+config/icon="res://assets/textures/flappy.png"
+config/windows_native_icon="res://assets/textures/flappy.ico"
 
 [display]
 
@@ -36,7 +37,7 @@ common/drop_mouse_on_gui_input_disabled=true
 Jump={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
-, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
 
@@ -53,4 +54,4 @@ common/enable_pause_aware_picking=true
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 quality/filters/msaa=3
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://resources/default_env.tres"
