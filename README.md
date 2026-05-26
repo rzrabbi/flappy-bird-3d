@@ -1,7 +1,7 @@
 <h1 align="center">Flappy Bird 3D Game</h1>
 
 <p align="center">
-  <a href="https://rzrabbi.itch.io/flappy-bird-3d" target="_blank">
+  <a href="https://itch.io/embed-upload/17690534?color=4EC0CA" target="_blank">
     <img src="https://img.shields.io/badge/PLAY_NOW_ON-ITCH.IO-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white" alt="Play Game on itch.io" height="50" />
   </a>
 </p>
