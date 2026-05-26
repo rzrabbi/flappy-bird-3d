@@ -22,21 +22,30 @@
 
 The game is controlled using the **Spacebar** on a keyboard. If you are playing on a touchscreen device, you can simply **tap the screen** to jump and navigate the bird through the pipes.
 
-# Build from Source (For Developers)
+# Running from Source
 
-This section is for developers who want to modify or learn from the project. If you just want to play the game directly, you can play it online on [itch.io](https://rzrabbi.itch.io/flappy-bird-3d).
+If you want to modify or edit the source code, you can easily set it up locally. (If you just want to play the game, you can play it directly in your browser on [itch.io](https://rzrabbi.itch.io/flappy-bird-3d)).
 
-To build or edit the game, you will need to have Godot 3 (3.6 stable recommended) installed on your computer. You can download Godot from [the Godot website](https://godotengine.org/).
+### Prerequisites
+You will need **Godot Engine 3.x** (version 3.6 recommended). You can download it for free from [the official Godot website](https://godotengine.org/download/archive/3.6-stable/).
 
-1. Clone the repository:
+### Steps to Run Locally
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/rzrabbi/flappy-bird-3d.git
    ```
-2. Open the project in Godot 3 (3.6 stable)
-3. Click the "Play" button to start the game
+2. **Import the project**:
+   - Open **Godot Engine**.
+   - Click the **Import** button on the right side.
+   - Click **Browse** and navigate to your cloned `flappy-bird-3d` folder.
+   - Select the `project.godot` file, click **Open**, and then click **Import & Edit**.
+3. **Run the game**:
+   - Once inside the editor, click the **Play** button in the top-right corner (or press `F5`) to start playing!
+
 
 # Special Thanks
 
 A massive thank you to **Johnny Rouddro** for introducing me to the Godot Engine and game development in general. His guidance in setting up the project and helping write the code was invaluable to this first step of my journey.
 
-Huge thanks as well to **Borna Barua**, who created the fantastic 3D art and assets that brought this project to life.
+Many thanks as well to **Borna Barua** for creating the fantastic 3D art and assets for this game.

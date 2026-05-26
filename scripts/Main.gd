@@ -7,6 +7,28 @@ func _ready():
 	load_hiscore()
 	$Score.text = "Score: 0\nHigh Score: " + String(hiscore)
 	
+	var version_label = Label.new()
+	version_label.text = "v" + str(ProjectSettings.get_setting("application/config/version"))
+	
+	var font = DynamicFont.new()
+	font.font_data = load("res://assets/fonts/LilitaOne-Regular.ttf")
+	font.size = 36
+	font.outline_size = 3
+	font.outline_color = Color(0.196, 0.643, 1)
+	version_label.add_font_override("font", font)
+	
+	version_label.anchor_left = 1.0
+	version_label.anchor_top = 1.0
+	version_label.anchor_right = 1.0
+	version_label.anchor_bottom = 1.0
+	version_label.margin_left = -200
+	version_label.margin_top = -60
+	version_label.margin_right = -20
+	version_label.margin_bottom = -20
+	version_label.align = Label.ALIGN_RIGHT
+	version_label.valign = Label.VALIGN_BOTTOM
+	add_child(version_label)
+	
 func _exit_tree():
 	# Ensure the high score is saved when the game is closed or scene changes.
 	save_hiscore()
