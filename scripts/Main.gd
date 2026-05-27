@@ -3,7 +3,29 @@ extends Spatial
 var score = 0
 var hiscore = 0
 
+var main_menu_bgm: AudioStreamPlayer
+var game_over_bgm: AudioStreamPlayer
+var ui_button_click: AudioStreamPlayer
+var bird_jump: AudioStreamPlayer
+var bird_collision: AudioStreamPlayer
+
+func create_audio(node_name: String, path: String) -> AudioStreamPlayer:
+	var player = AudioStreamPlayer.new()
+	player.name = node_name
+	player.stream = load(path)
+	player.pause_mode = Node.PAUSE_MODE_PROCESS
+	add_child(player)
+	return player
+
 func _ready():
+	main_menu_bgm = create_audio("MainMenuBGM", "res://assets/sounds/main_menu_bgm.ogg")
+	game_over_bgm = create_audio("GameOverBGM", "res://assets/sounds/game_over.ogg")
+	ui_button_click = create_audio("UIButtonClick", "res://assets/sounds/ui_button_click.wav")
+	bird_jump = create_audio("BirdJump", "res://assets/sounds/bird_jump.wav")
+	bird_collision = create_audio("BirdCollision", "res://assets/sounds/bird_collision.wav")
+	
+	main_menu_bgm.play()
+
 	load_hiscore()
 	$Score.text = "Score: 0\nHigh Score: " + String(hiscore)
 	
@@ -59,6 +81,11 @@ func load_hiscore():
 
 func _on_Button_pressed():
 	# Start the game loop: hide UI, enable player physics, start spawning obstacles.
+	if is_instance_valid(ui_button_click):
+		ui_button_click.play()
+	if is_instance_valid(main_menu_bgm):
+		main_menu_bgm.stop()
+		
 	$Button.hide()
 	$Bird.start()
 	$ObstacleSpawner.start_spawning()
@@ -67,6 +94,10 @@ func _on_Button_pressed():
 
 func _on_Button2_pressed():
 	# Restart the game by reloading the current scene and unpausing the tree.
+	if is_instance_valid(ui_button_click):
+		ui_button_click.play()
+		yield(ui_button_click, "finished")
+		
 	get_tree().reload_current_scene()
 	get_tree().paused = false
 

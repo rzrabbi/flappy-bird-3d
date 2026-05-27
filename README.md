@@ -13,7 +13,7 @@
 <h2 align="center">Gameplay Preview</h2>
 
 <p align="center">
-  <a href="https://rzrabbi.itch.io/flappy-bird-3d">
+  <a href="https://itch.io/embed-upload/17690534?color=4EC0CA">
     <img src="assets/previews/v0.1_gameplay.gif" alt="Gameplay Preview" />
   </a>
 </p>
@@ -27,6 +27,7 @@ The game is controlled using the **Spacebar** on a keyboard. If you are playing 
 If you want to modify or edit the source code, you can easily set it up locally. (If you just want to play the game, you can play it directly in your browser on [itch.io](https://rzrabbi.itch.io/flappy-bird-3d)).
 
 ### Prerequisites
+
 You will need **Godot Engine 3.x** (version 3.6 recommended). You can download it for free from [the official Godot website](https://godotengine.org/download/archive/3.6-stable/).
 
 ### Steps to Run Locally
@@ -42,7 +43,6 @@ You will need **Godot Engine 3.x** (version 3.6 recommended). You can download i
    - Select the `project.godot` file, click **Open**, and then click **Import & Edit**.
 3. **Run the game**:
    - Once inside the editor, click the **Play** button in the top-right corner (or press `F5`) to start playing!
-
 
 # Special Thanks
 

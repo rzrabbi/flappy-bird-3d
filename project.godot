@@ -17,7 +17,7 @@ boot_splash/image="res://assets/textures/splash.png"
 boot_splash/bg_color=Color( 0.0156863, 0, 0, 1 )
 config/icon="res://assets/textures/flappy.png"
 config/windows_native_icon="res://assets/textures/flappy.ico"
-config/version="0.1"
+config/version="0.2"
 
 [display]
 
